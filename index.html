@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech CRAFTERS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f2fcfe, #1c92d2);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(to right, #667eea, #764ba2);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      animation: fadeInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    nav a {
+      padding: 15px 25px;
+      text-decoration: none;
+      color: #fff;
+      transition: all 0.3s ease-in-out;
+      font-weight: bold;
+      position: relative;
+    }
+
+    nav a::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 3px;
+      background: #00ffe5;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    nav a:hover {
+      background: #111;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #111;
+      border-bottom: 3px solid #00ffe5;
+      display: inline-block;
+    }
+
+    .achievement img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 15px;
+      margin-top: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .achievement img:hover {
+      transform: scale(1.05);
+    }
+
+    .members a {
+      display: inline-block;
+      margin: 10px 15px;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .members a:hover {
+      background: linear-gradient(45deg, #a1c4fd, #c2e9fb);
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 50px;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tech CRAFTERS</h1>
+    <p>Innovators of CK College of Engineering and Technology - AI&DS 2nd Year</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#members">Members</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Tech CRAFTERS</h2>
+    <p>We are a passionate group of AI & Data Science students at CK College of Engineering and Technology, creating tech-driven solutions to real-world problems.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are second-year students of Artificial Intelligence and Data Science. Our goal is to innovate, learn, and contribute to technology. From AI projects to full-stack web apps, we are building our future, one project at a time.</p>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement">
+      <h3>🏆 paper presentation</h3>
+      <img src="hai.jpg" alt="paper presented Achievement">
+      <p>Won 2nd place at Algnition'25 at ds symposia'25</p>
+    </div>
+    
+  </section>
+
+  <section id="members">
+    <h2>Our Team Members</h2>
+    <div class="members">
+      <a href="jack.html" target="_blank">JAGATHISH</a>
+      <a href="PREM.html" target="_blank">PREM KUMAR</a>
+      <a href="index.html" target="_blank">HARISH</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href=" ">Loading..</a></p>
+    <p>Linkedin: <a href="https://www.linkedin.com/in/jagathish-t-ab46102a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app 
+" target="_blank">@techcrafters</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tech CRAFTERS. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
